@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
@@ -11,7 +12,7 @@ public class MatrixTest {
     private static final int MATRIX_LENGTH = 5;
 
     // TODO: Uncomment testcase to test minimum method.
-    /*
+
     @Test
     public void testMinimum() {
         int[][] matrix = {
@@ -22,12 +23,12 @@ public class MatrixTest {
                 { 79,  89,  95, -84, -53}
         };
 
-        assertEquals(-97, Matrix.minimum(matrix));
+        assertEquals(-97, Collections.unmodifiableList(Matrix.minimum(matrix)));
     }
-    */
+
 
     // TODO: Uncomment testcase to test numbersDivisibleByThree method.
-    /*
+
     @Test
     public void testNumbersDivisibleByThree() {
         int[][] matrix = {
@@ -38,7 +39,7 @@ public class MatrixTest {
                 { 79,  89,  95, -84, -53}
         };
 
-        ArrayList<Integer> actual = Matrix.numbersDivisibleByThree(matrix);
+        int[] actual = Matrix.numbersDivisibleByThree(matrix);
 
         assertEquals(7, actual.size());
         assertTrue(actual.contains(84));
@@ -49,5 +50,6 @@ public class MatrixTest {
         assertTrue(actual.contains(-27));
         assertTrue(actual.contains(-84));
     }
-    */
+
 }
+s
